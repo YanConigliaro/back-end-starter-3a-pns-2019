@@ -4,5 +4,5 @@ const BaseModel = require('../utils/base-model.js');
 module.exports = new BaseModel('Ticket', {
   title: Joi.string().required(),
   date: Joi.date().required(),
-  student: Joi.string().required(),
+  studentId: Joi.number().integer().required(),
 });
